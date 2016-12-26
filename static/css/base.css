@@ -19,7 +19,7 @@ a:hover{
   text-decoration: underline;
   color: #E4393C;
 }
-.lf{
+.lt{
   float: left;
 }
 .rt{
@@ -177,10 +177,66 @@ div.top_bar_dropdown{
 
 
 
-#top_main{
-  height: 90px;
-  background: #ffa;
+#search_dropdown {
+  position: absolute;
+  width: 430px;
+  height: 200px;
+  border: 1px solid #E4393C;
+  background-color: #fff;
+  top:62px;
+  box-shadow: 0 0 2px 2px #ddd;
+
 }
+p.item{
+  padding: 5px;
+}
+
+
+
+/*LOGO和搜索校栏*/
+#top_main{
+  height: 60px;
+  background: #fff;
+  padding: 15px 0;
+  position: relative;
+}
+#top_main > img:first-child{
+  cursor:pointer;
+  margin-right: 60px;
+}
+#search_box{
+  position: relative;
+}
+#search{
+  border: 2px solid #E4393C;
+  background-color: #E4393C;
+}
+#search [type=text]{
+  width: 415px;
+  height: 20px;
+  padding: 5px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #666;
+  outline: none;
+}
+#search [type=button] {
+  background-color: #E4393C;
+  border: none;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  cursor:pointer;
+}
+#hot_search {
+  margin: 3px auto 0 auto;
+  text-align: center;
+}
+
+
+
 #nav{
   height: 40px;
   background-image: linear-gradient(to top, #E13335 0%,#E64346 100%);

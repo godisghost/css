@@ -108,9 +108,57 @@
     </div>
   </div>
 
-  <!--LOgo和搜索栏-->
+  <!--Logo和搜索栏-->
   <div id="top_main">
-    <h4>LOgo和搜索栏</h4>
+    <img src="static/image/logo-201305.png" class="lt">
+    <div id="search_box" class="lt">
+      <div id="search">
+        <input type="text" name="keysords">
+        <input type="button" value="搜索">
+      </div>
+      <div id="hot_search">
+        热门搜索:
+        <a href="#">家纺11月大促</a>
+        <a href="#">彩虹电热毯</a>
+        <a href="#">博洋家纺</a>
+        <a href="#">霞珍</a>
+        <a href="#">床褥床垫</a>
+        <a href="#">九州鹿家纺</a>
+        <a href="#">南极人家纺</a>
+      </div>
+      <div id="search_dropdown" style="display: none;">
+        <p class="item">
+          <a href="#" class="lt">卫<b>新</b></a>
+          <span class="rt">约1120个商品</span>
+        </p>
+        <p class="item">
+          <a href="#" class="lt">卫<b>生纸</b></a>
+          <span class="rt">约1120个商品</span>
+        </p>
+        <p class="item">
+          <a href="#" class="lt">卫<b>浴</b></a>
+          <span class="rt">约1120个商品</span>
+        </p>
+        <p class="item">
+          <a href="#" class="lt">卫<b>裢</b></a>
+          <span class="rt">约1120个商品</span>
+        </p>
+        <p class="item">
+          <a href="#" class="lt">卫<b>衣 男</b></a>
+          <span class="rt">约1120个商品</span>
+        </p>
+        <p class="item">
+          <a href="#" class="lt">卫<b>生纸 套装</b></a>
+          <span class="rt">约1120个商品</span>
+        </p>
+      </div>
+    </div>
+    <div>
+      我的京东
+    </div>
+    <div>
+      去购物车结算
+    </div>
   </div>
   
   <!--导航栏-->
