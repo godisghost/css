@@ -1,5 +1,5 @@
 @charset "uft-8";
-/*通用基础样式*/
+/*Í¨ÓÃ»ù´¡ÑùÊ½*/
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 }
 body{
   font-size: 12px;
-  font-family: "宋体",Arial;
+  font-family: "ËÎÌå",Arial;
   color: #666;
   background: #fff;
 }
@@ -29,7 +29,7 @@ a:hover{
   clear: both;
 }
 
-/*页面基本布局*/
+/*Ò³Ãæ»ù±¾²¼¾Ö*/
 #top{
   width: 100%;
   height: 30px;
@@ -129,7 +129,7 @@ div.top_bar_dropdown{
   text-align: center;
   left: 12px;
 }
-#sm_dropdown{ /*站点地图下拉框*/
+#sm_dropdown{ /*Õ¾µãµØÍ¼ÏÂÀ­¿ò*/
   width: 220px;
   padding: 15px;
   left: -160px;
@@ -141,7 +141,7 @@ div.top_bar_dropdown{
 #sm_dropdown .clr{
   border-bottom: 1px solid #ddd;
 }
-#aj_dropdown { /*手机地图下拉框*/
+#aj_dropdown { /*ÊÖ»úµØÍ¼ÏÂÀ­¿ò*/
   width: 220px;
   background: #fff url(../image/app_jd_1.png) center 10px no-repeat;
   padding:10px;
@@ -174,31 +174,11 @@ div.top_bar_dropdown{
   cursor: pointer;
 }
 
-
-
-
-#search_dropdown {
-  position: absolute;
-  width: 430px;
-  height: 200px;
-  border: 1px solid #E4393C;
-  background-color: #fff;
-  top:62px;
-  box-shadow: 0 0 2px 2px #ddd;
-
-}
-p.item{
-  padding: 5px;
-}
-
-
-
-/*LOGO和搜索校栏*/
+/*LOGOºÍËÑË÷Ð£À¸*/
 #top_main{
   height: 60px;
   background: #fff;
   padding: 15px 0;
-  position: relative;
 }
 #top_main > img:first-child{
   cursor:pointer;
@@ -234,6 +214,53 @@ p.item{
   margin: 3px auto 0 auto;
   text-align: center;
 }
+#search_dropdown {
+  position: absolute;
+  width: 430px;
+  border: 1px solid #E4393C;
+  background-color: #fff;
+  top:38px;
+  box-shadow: 0 0 2px 2px #ddd;
+  overflow: hidden;
+  display: none;
+}
+p.item{
+  padding: 5px;
+  line-height: 28px;
+  overflow: hidden;
+}
+p.item:hover {
+  background-color: #FFDFC6;
+}
+#my_jd {
+  margin-left: 173px;
+  width: 75px;
+  height: 30px;
+  border: 1px solid #efefef;
+  background: #f7f7f7 url(../image/iconlist_2.png) -118px -24px no-repeat;
+  line-height: 30px;
+  padding-left: 30px;
+  margin-top: 10px;
+  z-index: 3;
+}
+#my_jd > b{
+  border: 5px solid #ccc;
+  border-color: #ccc transparent transparent transparent;
+  display: inline-block;
+  border-width: 5px 5px 2px 5px;
+}
+#my_jd_dropdown {
+  position: absolute;
+  border: 1px solid #efefef;
+  width: 250px;
+  height: 200px;
+  background-color: #fff;
+  top: 28px;
+  left: -146px;
+  z-index: 2;
+  display: block;
+}
+
 
 
 

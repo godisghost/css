@@ -17,6 +17,20 @@
   function showOrHide(id, dp) {
     document.getElementById(id).style.display = dp;
   }
+
+  function showMyJd(){
+    document.getElementById("my_jd").style.backgroundColor="#FFF";
+    document.getElementById("my_jd").style.backgroundPosition="-118px -55px";
+    document.getElementById("my_jd").style.borderBottomColor="#fff";
+    document.getElementById("my_jd_dropdown").style.display="block";
+  }
+
+  function hideMyJd(){
+    document.getElementById("my_jd").style.backgroundColor="#f7f7f7";
+    document.getElementById("my_jd").style.backgroundPosition="-118px -25px";
+    document.getElementById("my_jd").style.borderBottomColor="#efefef";
+    document.getElementById("my_jd_dropdown").style.display="none";
+  }
 </script>
 <body>
   <!--收藏和登录条-->
@@ -113,7 +127,7 @@
     <img src="static/image/logo-201305.png" class="lt">
     <div id="search_box" class="lt">
       <div id="search">
-        <input type="text" name="keysords">
+        <input type="text" name="keysords" onfocus="showOrHide('search_dropdown','block')" onblur="showOrHide('search_dropdown','none')">
         <input type="button" value="搜索">
       </div>
       <div id="hot_search">
@@ -126,37 +140,45 @@
         <a href="#">九州鹿家纺</a>
         <a href="#">南极人家纺</a>
       </div>
-      <div id="search_dropdown" style="display: none;">
-        <p class="item">
+      <div id="search_dropdown">
+        <p class="item clr">
+          <a href="#" class="lt">卫<b>衣</b></a>
+          <span class="rt">约1120个商品</span>
+        </p>
+        <p class="item clr">
           <a href="#" class="lt">卫<b>新</b></a>
           <span class="rt">约1120个商品</span>
         </p>
-        <p class="item">
+        <p class="item clr">
           <a href="#" class="lt">卫<b>生纸</b></a>
           <span class="rt">约1120个商品</span>
         </p>
-        <p class="item">
+        <p class="item clr">
           <a href="#" class="lt">卫<b>浴</b></a>
           <span class="rt">约1120个商品</span>
         </p>
-        <p class="item">
+        <p class="item clr">
           <a href="#" class="lt">卫<b>裢</b></a>
           <span class="rt">约1120个商品</span>
         </p>
-        <p class="item">
+        <p class="item clr">
           <a href="#" class="lt">卫<b>衣 男</b></a>
           <span class="rt">约1120个商品</span>
         </p>
-        <p class="item">
+        <p class="item clr">
           <a href="#" class="lt">卫<b>生纸 套装</b></a>
           <span class="rt">约1120个商品</span>
         </p>
       </div>
     </div>
-    <div>
-      我的京东
-    </div>
-    <div>
+    <div id="my_jd" class="lt" onmouseover="showMyJd()" onmouseout="hideMyJd()">
+      <div>
+        我的京东
+        <b></b>
+      </div>
+      <div id="my_jd_dropdown"></div>
+    </div>  
+    <div class="lt">
       去购物车结算
     </div>
   </div>
